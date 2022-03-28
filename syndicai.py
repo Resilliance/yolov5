@@ -8,8 +8,8 @@ class PythonPredictor:
 
     def __init__(self, config):
         """ Download pretrained model. """
-        #self.model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True).autoshape()
-        self.model = torch.hub.load('Resilliance/yolov5', 'best19.19.11',pretrained=True).autoshape()  # default
+        self.model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True).autoshape()
+        #self.model = torch.hub.load('Resilliance/yolov5', 'best19.19.11',pretrained=True).autoshape()  # default
         #self.model.load_state_dict(torch.load('best19.19.11.pt'))
 
     def predict(self, payload):
